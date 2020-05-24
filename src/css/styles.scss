@@ -1,0 +1,39 @@
+:root  {
+    --color: rgba(120, 0, 63, 1);
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+
+}
+
+.videos {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.videos > * {
+    width: 250px;
+    height: 250px;
+    border: 3px solid var(--color);
+}
+
+#messages {
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+}
+
+#messages > div {
+    display: flex;
+    flex-direction: column;
+}
+
+#messages > div > div:first-child{
+    font-weight: 700;
+    font-style: italic;   
+    margin-right: 5px;
+}
