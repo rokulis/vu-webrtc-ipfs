@@ -30,7 +30,7 @@ function initEventListeners() {
 
         document.getElementById("roomHeader").innerHTML = `You are connected to <u><i>${roomName}</i></u> room.`
         let share = document.getElementById("share");
-        share.setAttribute("href", window.location.host + `/#${roomName}`);
+        share.setAttribute("href", "https://" + window.location.host + `/#${roomName}`);
         share.innerHTML = `Share this link: ${window.location.host}` + `/#${roomName}`
 
         start(roomName);
